@@ -24,4 +24,6 @@ date = Date.parse('2015-09-08')
   Episode.create(date: date, number: num)
   date = date.next
 end
+#Appearance.destroy_all
 
+#Appearance.create(guest_id: Guest.first.id, episode_id: Episode.first.id, rating: '5')
