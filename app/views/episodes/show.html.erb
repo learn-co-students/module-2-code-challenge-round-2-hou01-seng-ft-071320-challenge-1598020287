@@ -1,0 +1,7 @@
+<%= @episode.date %>
+<% @episode.guests.each do |gu| %>
+  <li>  <%= link_to gu.name, guest_path(gu) %> </li>
+<% end %>
+Average Rating:
+<%= @episode.appearances.average(:rating) %>
+

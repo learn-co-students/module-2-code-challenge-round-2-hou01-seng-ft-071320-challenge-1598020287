@@ -1,0 +1,4 @@
+<%= @guest.name %></br>
+<% @guest.appearances.order("rating DESC").each do |app| %>
+ <li><%= link_to app.episode.date, episode_path(app.episode) %> Rating: <%= app.rating %></li>
+<% end %>
