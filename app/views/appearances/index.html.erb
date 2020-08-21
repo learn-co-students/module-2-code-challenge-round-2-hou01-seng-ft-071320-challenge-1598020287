@@ -1,0 +1,5 @@
+<% @appearances.each do |app| %>
+    <%= app.guest.name %><%= app.guest.id %></br></br>
+    <%= app.episode.date %><%= app.episode.id %><br>
+    <%= app.rating %><br>
+<% end %><br><br>
